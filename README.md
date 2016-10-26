@@ -30,6 +30,10 @@ And visit [localhost:8000](http://localhost:8000/)
 
 # Extend
 
+You can just create a bundle add add these to this package. You just have to add an item to the menu so it shows.
+
+My bundles comming soon, if i have some examples.
+
 #### Creating menu items:
 ```
 app_bundle.configure_menu_listener:

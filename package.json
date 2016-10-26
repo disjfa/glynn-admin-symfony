@@ -7,11 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/disjfa/glynn-admin-symfony.git"
+    "watch": "grunt watcher"
   },
   "keywords": [
     "admin",
@@ -26,7 +22,7 @@
   },
   "homepage": "https://github.com/disjfa/glynn-admin-symfony#readme",
   "dependencies": {
-    "myblog": "github:disjfa/glynn-admin"
+    "glynn-admin": "^0.1.3"
   },
   "devDependencies": {
     "babel-preset-es2015": "^6.13.2",

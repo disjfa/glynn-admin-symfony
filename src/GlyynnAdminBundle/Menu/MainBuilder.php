@@ -79,8 +79,9 @@ class MainBuilder
      */
     public function setupMenuData(array $children, $hasCurrent = false)
     {
-        foreach ($children as $childIndex => $child) {
-
+        $childIndex = 0;
+        foreach ($children as $child) {
+            $childIndex++;
             if (count($child->getChildren()) > 0) {
                 $itemId = sprintf('menu-%d-%d', $child->getLevel(), $childIndex + 1);
 
