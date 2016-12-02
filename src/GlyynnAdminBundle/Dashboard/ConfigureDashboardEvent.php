@@ -7,10 +7,13 @@ use Symfony\Component\EventDispatcher\Event;
 use Twig_Environment;
 
 /**
- * @property ArrayCollection items
+ * Class ConfigureDashboardEvent
  */
 class ConfigureDashboardEvent extends Event
 {
+    /**
+     *
+     */
     const NAME = 'glynn_admin.dashboard_items';
     /**
      * @var Twig_Environment
@@ -21,6 +24,10 @@ class ConfigureDashboardEvent extends Event
      */
     private $items;
 
+    /**
+     * ConfigureDashboardEvent constructor.
+     * @param Twig_Environment $twig
+     */
     public function __construct(Twig_Environment $twig)
     {
         $this->twig = $twig;
@@ -35,6 +42,9 @@ class ConfigureDashboardEvent extends Event
         return $this->twig;
     }
 
+    /**
+     * @return ArrayCollection
+     */
     public function getItems()
     {
         return $this->items;

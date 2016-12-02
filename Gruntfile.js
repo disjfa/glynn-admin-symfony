@@ -31,12 +31,15 @@ module.exports = function (grunt) {
                             {
                                 presets: ['es2015']
                             }
-                        ]
+                        ],
+                        'vueify',
+                        'aliasify'
                     ],
                     browserifyOptions: {
                         debug: true
                     },
-                    exclude: ''
+                    exclude: '',
+                    watch: true
                 },
                 files: {
                     'web/glynn-admin/js/glynn-admin.js': ['web/glynn-admin/assets/glynn-admin.js']
