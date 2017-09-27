@@ -17,3 +17,5 @@
 /node_modules/
 /app/glynn-admin.db3
 .idea
+.sass-cache
+.web-server-pid
