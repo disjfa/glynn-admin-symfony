@@ -3,16 +3,16 @@
 {% trans_default_domain 'FOSUserBundle' %}
 
 {% block fos_user_content %}
-    <div class="row">
-        <div class="col-sm-6 push-sm-3">
+    <div class="row justify-content-md-center">
+        <div class="col-md-6">
             <form action="{{ path("fos_user_security_check") }}" method="post">
                 <input type="hidden" name="_csrf_token" value="{{ csrf_token }}">
-                <div class="card bg-faded">
+                <div class="card bg-light">
                     <div class="card-header bg-primary text-white   ">
                         <i class="fa fa-user"></i>
                         Login
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         {% if error %}
                             <div class="alert alert-warning">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
                         {% endif %}

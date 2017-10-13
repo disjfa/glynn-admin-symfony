@@ -4,7 +4,7 @@ namespace UserBundle\GlynnAdminMenu;
 
 use Doctrine\ORM\EntityManagerInterface;
 use GlyynnAdminBundle\Menu\ConfigureMenuEvent;
-use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
+use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorage;
 use UserBundle\Entity\User;
 
 /**
@@ -25,9 +25,9 @@ class UserMenuListener
     /**
      * MediaMenuListener constructor.
      * @param EntityManagerInterface $entityManager
-     * @param TokenStorageInterface $token
+     * @param TokenStorage $token
      */
-    public function __construct(EntityManagerInterface $entityManager, TokenStorageInterface $token)
+    public function __construct(EntityManagerInterface $entityManager, TokenStorage $token)
     {
         $this->entityManager = $entityManager;
         if (null !== $token->getToken() && $token->getToken()->getUser() instanceof User) {

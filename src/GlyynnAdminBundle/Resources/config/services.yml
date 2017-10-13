@@ -1,15 +1,10 @@
 services:
-  glynn_admin.menu_builder:
-    class: GlyynnAdminBundle\Menu\MainBuilder
-    arguments:
-      - '@service_container'
-      - '@knp_menu.factory'
-      - '@knp_menu.matcher'
+  GlyynnAdminBundle\Menu\MainBuilder:
+    autowire: true
     tags:
       - { name: 'knp_menu.menu_builder', method: 'build', alias: 'glynn-admin' }
 
-  glynn_admin.dashboard_item_listener:
-        class: GlyynnAdminBundle\Dashboard\DashboardExample
-        tags:
-          - { name: 'kernel.event_listener', event: 'glynn_admin.dashboard_items', method: 'get' }
+  GlyynnAdminBundle\Dashboard\DashboardExample:
+    tags:
+      - { name: 'kernel.event_listener', event: 'glynn_admin.dashboard_items', method: 'get' }
 

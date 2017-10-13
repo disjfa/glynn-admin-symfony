@@ -91,7 +91,7 @@ class MainBuilder
                 $child->setLinkAttribute('data-toggle', 'collapse');
 
                 if($this->matcher->isAncestor($child)) {
-                    $child->setChildrenAttribute('class', 'sidebar-sub collapse in');
+                    $child->setChildrenAttribute('class', 'sidebar-sub collapse show');
                     $child->setLinkAttribute('class', 'sidebar-link');
                 } else {
                     $child->setLinkAttribute('class', 'sidebar-link collapsed');

@@ -1,14 +1,14 @@
 {% trans_default_domain 'FOSUserBundle' %}
 
-<div class="row">
-    <div class="col-sm-6 push-sm-3">
+<div class="row justify-content-md-center">
+    <div class="col-md-6">
         <form action="{{ path('fos_user_resetting_send_email') }}" method="POST" class="fos_user_resetting_request">
-            <div class="card bg-faded">
+            <div class="card bg-light">
                 <div class="card-header bg-primary text-white">
                     <i class="fa fa-user"></i>
                     Reset password
                 </div>
-                <div class="card-block">
+                <div class="card-body">
                     <div class="form-group">
                         {% if invalid_username is defined %}
                             <p>{{ 'resetting.request.invalid_username'|trans({'%username%': invalid_username}) }}</p>
