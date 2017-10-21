@@ -70,7 +70,7 @@ module.exports = function (grunt) {
             dist: {
                 options: {
                     style: 'expanded',
-                    loadPath: 'node_modules'
+                    includePaths: ['node_modules']
                 },
                 files: {
                     'web/glynn-admin/css/glynn-admin.css': 'web/glynn-admin/scss/glynn-admin.scss'
@@ -120,7 +120,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-clean');
-    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-browserify');

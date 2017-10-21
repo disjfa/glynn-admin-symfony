@@ -26,6 +26,8 @@
     "babel-preset-env": "^1.6.0",
     "bootstrap": "^4.0.0-beta",
     "glynn-admin": "^0.1.7",
+    "grunt-sass": "^2.0.0",
+    "node-sass": "^4.5.3",
     "popper.js": "^1.12.5",
     "vue": "^2.5.1",
     "vue-loader": "^13.3.0",
