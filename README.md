@@ -3,6 +3,11 @@ Glynn-admin-symfony
 
 Symfony implementation for the [glynn-admin](https://github.com/disjfa/glynn-admin) template.
 
+# No longer maintained
+
+Please check out [glynn-admin-symfony4](https://github.com/disjfa/glynn-admin-symfony4). 
+This is a continuation of this, but for symfony4. You can still use this, but there will be no more updates.
+
 # Instalation
 
 ```
